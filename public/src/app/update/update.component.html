@@ -1,0 +1,18 @@
+<div class="outside">
+
+  <div *ngIf='product'>
+    <!-- {{ product | json }}
+      {{ product.name | json }}
+      {{ product.type | json }} -->
+      <h3>Update Product</h3>
+      <span class="red" *ngIf="msg">{{ msg.error.message }}</span>
+      
+      <form (submit)="update()" >
+        Name: <br><input type="text" [(ngModel)]="product.name" name="name" ><br>
+        Qty: <br><input type="number" [(ngModel)]="product.qty" name="qty" ><br>
+        Price: <br><input type="number" [(ngModel)]="product.price" name="price"><br><br>
+        <input type="submit" value="UPDATE">&nbsp;&nbsp;&nbsp;&nbsp;<button [routerLink]="['/']">cancel</button><br>
+      </form><br>
+      
+    </div>
+  </div>

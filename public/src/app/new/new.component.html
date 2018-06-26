@@ -1,0 +1,16 @@
+<div class="outside">
+
+  <h3>New Product</h3>
+  <span class="red" *ngIf="msg">{{ msg.message }}</span><br>
+  
+  <form (submit)="create(myform)" #myform="ngForm">
+    Name: <br>
+    <input type="text" ngModel name="name"> <br>
+    Qty<br>
+    <input type="number" ngModel name="qty"> <br>
+    Price: <br>
+    <input type="number" ngModel name="price"> <br><br>
+    <input type="submit" value="CREATE"> &nbsp;&nbsp;&nbsp;&nbsp; <button [routerLink]="['/']">cancel</button>
+  </form>
+  
+</div>

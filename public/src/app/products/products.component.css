@@ -1,0 +1,11 @@
+table{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+thead{
+    font-size: 18pt;
+}
+td{
+    border: 1px solid grey;
+}

@@ -1,0 +1,12 @@
+<div class="outside">
+
+  <div *ngIf="product">
+    <h3>Product Detaills</h3>
+    <hr>
+    Name: {{product.name}}<br>
+    Qty: {{product.qty}}<br>
+    Price: {{product.price}}<br>
+    <br>  
+    <button [routerLink]="['/']">cancel</button> | <button (click)="delete(product._id)">delete</button> | <button disabled> delete_test</button>
+  </div>
+</div>
